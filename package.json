@@ -1,6 +1,6 @@
 {
-  "name": "reactstrap",
-  "version": "9.2.4",
+  "name": "reactstrap-wc",
+  "version": "19.2.3",
   "description": "React Bootstrap components",
   "source": "src/index.js",
   "main": "lib/index.js",
