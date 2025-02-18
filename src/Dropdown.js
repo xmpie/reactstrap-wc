@@ -279,14 +279,16 @@ class Dropdown extends React.Component {
   }
 
   addEvents() {
+    const rootDoc = this.containerRef.current.getRootNode();
     ['click', 'touchstart', 'keyup'].forEach((event) =>
-      document.addEventListener(event, this.handleDocumentClick, true),
+      rootDoc.addEventListener(event, this.handleDocumentClick, true),
     );
   }
 
   removeEvents() {
+    const rootDoc = this.containerRef.current.getRootNode();
     ['click', 'touchstart', 'keyup'].forEach((event) =>
-      document.removeEventListener(event, this.handleDocumentClick, true),
+      rootDoc.removeEventListener(event, this.handleDocumentClick, true),
     );
   }
 
